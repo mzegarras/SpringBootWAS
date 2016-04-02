@@ -7,13 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-    @RequestMapping("/test1/{name}")
-    String test1(@PathVariable String name) {
+    @RequestMapping("/hello/{name}")
+    String hello(@PathVariable String name) {
         return "Hello, " + name + "!";
-    }
-    
-    @RequestMapping("/test2")
-    String test2() {
-        return "Hello!";
     }
 } 

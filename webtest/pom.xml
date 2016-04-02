@@ -6,14 +6,15 @@
 	<groupId>com.interbank</groupId>
 	<artifactId>webtest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>war</packaging>
 
 	<description>Demo project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<!--version>1.0.0.BUILD-SNAPSHOT</version-->
+		<version>1.3.3.RELEASE</version>
 	</parent>
 
 
@@ -24,6 +25,14 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<!--dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-jmx</artifactId>
+			<version>4.2.5.RELEASE</version>
+			
+		</dependency-->
+
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -32,7 +41,14 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
 				</exclusion>
+				
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter-logging</artifactId>
+				</exclusion>
 			</exclusions>
+			
+			 
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -43,7 +59,7 @@
 
 
 	<properties>
-		<start-class>demo.Application</start-class>
+		<start-class>com.interbank.webtest.Application</start-class>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
