@@ -1,6 +1,6 @@
-server:
-  port: 9001
-  context-path: /api/
+#server:
+#  port: 9001
+#  context-path: /api/
 spring:
   cloud:
     config:
@@ -12,6 +12,6 @@ spring:
   ##  driver-class-name: com.mysql.jdbc.Driver
 logging:
   level: DEBUG
-  config: classpath:log4j2-${spring.profiles.active}.yml
+  config: file:/Proyectos/Apps/config/log4j2-${spring.profiles.active}.yml
   jackson:
     serialization-inclusion: NON_NULL

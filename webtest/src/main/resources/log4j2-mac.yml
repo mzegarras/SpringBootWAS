@@ -2,7 +2,7 @@ Configuration:
   properties:
     property:
     - name: basedir
-      value: /Proyectos/Apps
+      value: /Proyectos/Apps/logs
     - name: filename
       value: general.log
     - name: filenameJDBC
@@ -50,21 +50,21 @@ Configuration:
         max: 30
   Loggers:
     Logger:
-    - name: org.springframework.jdbc
+    - name: org.springframework
       additivity: false
       level: trace
       AppenderRef:
       - ref: file2
-    - name: net.msonic.pos.ws.rest.filter
+    - name: com.interbank.webtest
       additivity: false
       level: trace
       AppenderRef:
       - ref: file3
-    - name: net.msonic.pos.ws.rest.interceptor
-      additivity: false
-      level: trace
-      AppenderRef:
-      - ref: file3
+    #- name: net.msonic.pos.ws.rest.interceptor
+    #  additivity: false
+    #  level: trace
+    #  AppenderRef:
+    #  - ref: file3
     Root:
       level: info
       AppenderRef:
