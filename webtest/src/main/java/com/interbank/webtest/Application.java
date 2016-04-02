@@ -17,9 +17,12 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @ComponentScan
 @EnableAutoConfiguration
-//@EnableConfigurationProperties
-//@EnableIntegrationMBeanExport(registration = org. springframework.jmx.support.RegistrationPolicy.REPLACE_EXISTING)
+//@ComponentScan({"net.msonic.pos.ws.*"})
+@EnableConfigurationProperties
+
 public class Application extends SpringBootServletInitializer  implements WebApplicationInitializer{
+		
+	
 	
 	 public static void main(String[] args) {
 	        SpringApplication.run(applicationClass, args);

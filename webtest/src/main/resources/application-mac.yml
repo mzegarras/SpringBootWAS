@@ -1,0 +1,17 @@
+server:
+  port: 9002
+  context-path: /api/
+spring:
+  cloud:
+    config:
+      enabled: false
+  ##datasource:
+  ## url: jdbc:mysql://192.168.0.66/pos_db
+  ##  username: pos
+  ##  password: password
+  ##  driver-class-name: com.mysql.jdbc.Driver
+logging:
+  level: DEBUG
+  config: classpath:log4j2-${spring.profiles.active}.yml
+  jackson:
+    serialization-inclusion: NON_NULL
