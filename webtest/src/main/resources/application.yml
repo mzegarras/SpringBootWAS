@@ -1,5 +1,12 @@
+##spring:
+  ##application:
+  ##  name: webtest
+  ##profiles:
+  ##  active: mac
+    
 spring:
-  application:
-    name: webtest
-  profiles:
-    active: mac
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/mzegarras/SpringBootWAS
