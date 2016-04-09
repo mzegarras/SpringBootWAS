@@ -22,7 +22,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableAutoConfiguration
 //@ComponentScan({"net.msonic.pos.ws.*"})
 @EnableConfigurationProperties
-@PropertySource(value = { "file:/Proyectos/Apps/config/application.yml" })
+//@PropertySource(value = { "file:/Proyectos/Apps/config/application.yml" })
 public class Application extends SpringBootServletInitializer  implements WebApplicationInitializer{
 		
 	
