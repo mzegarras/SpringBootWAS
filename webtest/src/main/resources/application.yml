@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: webtest
+  profiles:
+    active: mac
+    
