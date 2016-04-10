@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: productServices
-##  profiles:
-##    active: mac
-  config:
-    location: /Proyectos/Apps/config/

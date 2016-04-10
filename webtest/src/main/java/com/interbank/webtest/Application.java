@@ -1,5 +1,7 @@
 package com.interbank.webtest;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import org.springframework.boot.SpringApplication;
@@ -7,6 +9,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
@@ -14,19 +17,37 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import com.interbank.webtest.properties.MailProperties;
 
 
+
+/*
 @Configuration
 @EnableWebMvc
 @ComponentScan
 @EnableAutoConfiguration
-//@ComponentScan({"net.msonic.pos.ws.*"})
 @EnableConfigurationProperties
+@PropertySource(value = { "file:///Proyectos/Apps/config/application.yml" })
+*/
+
+@Configuration
+@ComponentScan
+@EnableAutoConfiguration
 //@PropertySource(value = { "file:/Proyectos/Apps/config/application.yml" })
+//@PropertySource(value = {"classpath:application.yml", "file:/Proyectos/Apps/config/application.yml"}, ignoreResourceNotFound = true)
+@PropertySource(value = {"file:/Proyectos/Apps/config/application-${spring.profiles.active}.yml"})
 public class Application extends SpringBootServletInitializer  implements WebApplicationInitializer{
 		
+	 public static void main(String[] args) {
+		 ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		 
+		 		    
+
+		    
+
+	}
 	
-	
+	/*
 	 	public static void main(String[] args) {
 	        SpringApplication.run(applicationClass, args);
 	    }
@@ -36,7 +57,7 @@ public class Application extends SpringBootServletInitializer  implements WebApp
 	        return application.sources(applicationClass);
 	    }
 
-	    private static Class<Application> applicationClass = Application.class;
+	    private static Class<Application> applicationClass = Application.class;*/
 	
 	
 	/*

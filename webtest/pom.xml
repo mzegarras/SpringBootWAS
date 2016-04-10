@@ -14,23 +14,15 @@
 
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.0.RELEASE</version>
+		<version>1.3.3.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 
 
 	</parent>
 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-parent</artifactId>
-				<version>Brixton.M3</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<!--dependencyManagement> <dependencies> <dependency> <groupId>org.springframework.cloud</groupId> 
+		<artifactId>spring-cloud-starter-parent</artifactId> <version>Brixton.M3</version> 
+		<type>pom</type> <scope>import</scope> </dependency> </dependencies> </dependencyManagement -->
 
 
 
@@ -64,10 +56,6 @@
 
 		</dependency>
 
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-config-server</artifactId>
-		</dependency>
 
 
 		<dependency>
@@ -94,6 +82,16 @@
 		</dependency>
 
 
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 
 
@@ -103,6 +101,10 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.7</java.version>
 	</properties>
+	
+	<build>
+		<finalName>wstest</finalName>
+	</build>
 
 	<repositories>
 		<repository>
