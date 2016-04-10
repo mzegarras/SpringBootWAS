@@ -17,7 +17,6 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
-import com.interbank.webtest.properties.MailProperties;
 
 
 
@@ -35,7 +34,8 @@ import com.interbank.webtest.properties.MailProperties;
 @EnableAutoConfiguration
 //@PropertySource(value = { "file:/Proyectos/Apps/config/application.yml" })
 //@PropertySource(value = {"classpath:application.yml", "file:/Proyectos/Apps/config/application.yml"}, ignoreResourceNotFound = true)
-@PropertySource(value = {"file:/Proyectos/Apps/config/application-${spring.profiles.active}.yml"})
+//@PropertySource(value = {"file:/Proyectos/Apps/config/application-${spring.profiles.active}.yml"})
+//@PropertySource(value = {"classpath:application.yml", "file:/Proyectos/Apps/config/application-${spring.profiles.active}.yml"}, ignoreResourceNotFound = true)
 public class Application extends SpringBootServletInitializer  implements WebApplicationInitializer{
 		
 	 public static void main(String[] args) {

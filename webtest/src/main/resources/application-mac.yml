@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: webtest
+  profiles:
+    active: mac
+management:
+  security:
+    enabled: true
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: admin
+logging:
+ config: file:/Proyectos/Apps/config/log4j2-${spring.profiles.active}.yml      

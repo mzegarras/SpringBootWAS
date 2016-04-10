@@ -2,4 +2,4 @@ spring:
   application:
     name: webtest
   profiles:
-    active: mac
+    active: mac 
