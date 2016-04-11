@@ -1,0 +1,11 @@
+mail:
+ host: localhost 
+ port: 25
+ smtp:
+  auth: false
+  starttls-enable: false
+ from: me@localhost.com
+ username: megarra
+ password: abc124
+
+

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: wstest
+  profiles:
+    active: desa
+management:
+  security:
+    enabled: false
+security:
+  basic:
+    enabled: false
+  user:
+    name: admin
+    password: password
+     
