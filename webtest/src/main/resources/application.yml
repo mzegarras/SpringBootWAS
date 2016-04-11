@@ -1,7 +1,3 @@
-info:
-  version: 1.0
-  stage: test
-  
 spring:
   application:
     name: wstest
