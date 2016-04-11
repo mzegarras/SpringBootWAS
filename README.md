@@ -1,7 +1,8 @@
 # SpringBootWAS
 
 
-1. First ordered list item
+1. Spring Boot - Monitor de servidor
+![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/ESTADO_SERVER.png)
 2. Another item
 ⋅⋅* Unordered sub-list. 
 1. Actual numbers don't matter, just that it's a number
