@@ -19,12 +19,12 @@ public class ProductController {
 		
 	
 		for (int i = 0; i < 20; i++) {
-			try {
+			/*try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
+			}*/
 			listado.add(String.valueOf(i+1));
 		}
 		
