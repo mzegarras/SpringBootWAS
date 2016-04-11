@@ -1,7 +1,7 @@
 # SpringBootWAS
 
 
-1. Spring Boot - Monitor de servidor
+1. Spring Boot Admin - Monitorear el estado del servidor
 ![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/ESTADO_SERVER.png)
 2. Another item
 ⋅⋅* Unordered sub-list. 
