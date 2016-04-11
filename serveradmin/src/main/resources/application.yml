@@ -1,0 +1,9 @@
+info:
+  version: 1.0.0
+
+spring:
+  application:
+    name: discovery-example
+  cloud:
+    config:
+      enabled: false
