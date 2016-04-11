@@ -32,6 +32,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @ComponentScan
 @EnableAutoConfiguration
+
 //@PropertySource(value = { "file:/Proyectos/Apps/config/application.yml" })
 //@PropertySource(value = {"classpath:application.yml", "file:/Proyectos/Apps/config/application.yml"}, ignoreResourceNotFound = true)
 //@PropertySource(value = {"file:/Proyectos/Apps/config/application-${spring.profiles.active}.yml"})

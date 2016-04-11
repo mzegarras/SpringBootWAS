@@ -1,5 +1,12 @@
 spring:
   application:
-    name: webtest
+    name: wstest
   profiles:
-    active: mac 
+    active: mac
+  boot:
+    admin:
+      client:
+        enabled: true
+        service-url: http://localhost:9080/wstest
+      url: http://localhost:8080
+      #api-path: wstest

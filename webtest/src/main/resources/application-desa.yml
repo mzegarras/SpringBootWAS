@@ -2,7 +2,18 @@ spring:
   application:
     name: webtest
   profiles:
-    active: mac
+    active: desa
+  boot:
+    admin:
+      url: http://localhost:8080
+      client:
+        enabled: true
+  cloud:
+    config:
+      enabled: false
+endpoints:
+  health:
+    sensitive: false
 management:
   security:
     enabled: false
@@ -12,5 +23,5 @@ security:
   user:
     name: admin
     password: password
-logging:
- config: file:/Proyectos/Apps/config/log4j2-${spring.profiles.active}.yml      
+#logging:
+# config: file:/Proyectos/Apps/config/log4j2-${spring.profiles.active}.yml      
