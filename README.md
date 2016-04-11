@@ -1,4 +1,4 @@
-# SpringBootWAS
+# Integrando Spring Boot con websphere y supervisar el estado con Spring Boot Admin
 
 
 1. Monitorear el estado del servidor.
