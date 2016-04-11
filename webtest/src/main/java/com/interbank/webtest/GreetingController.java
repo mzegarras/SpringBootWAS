@@ -36,7 +36,7 @@ public class GreetingController {
 		counterService.increment("services.system.myservice.invoked");
 		
 		try {
-			Thread.sleep(1000 * 12);
+			Thread.sleep(1000 * 5);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
