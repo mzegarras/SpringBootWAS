@@ -17,7 +17,7 @@ endpoints:
     sensitive: false
 management:
   security:
-    enabled: false
+    enabled: true
 security:
   basic:
     enabled: false

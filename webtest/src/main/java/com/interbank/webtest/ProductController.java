@@ -17,8 +17,14 @@ public class ProductController {
 			
 		List<String> listado = new ArrayList<String>();
 		
-		for (int i = 0; i < 50; i++) {
-			
+	
+		for (int i = 0; i < 20; i++) {
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			listado.add(String.valueOf(i+1));
 		}
 		

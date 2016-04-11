@@ -9,4 +9,6 @@ spring:
         enabled: true
         service-url: http://localhost:9080/wstest
       url: http://localhost:8080
+      username: admin
+      password: admin
       #api-path: wstest

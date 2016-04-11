@@ -34,6 +34,13 @@ public class GreetingController {
 		LOGGER.debug("Test debug: {}", name);
 
 		counterService.increment("services.system.myservice.invoked");
+		
+		try {
+			Thread.sleep(1000 * 12);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		return "Hello, " + name + "!";
 	}
