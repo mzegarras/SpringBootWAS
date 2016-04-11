@@ -114,6 +114,7 @@
 			<groupId>org.jolokia</groupId>
 			<artifactId>jolokia-core</artifactId>
 		</dependency>
+		
 		<dependency>
 			<!-- Make json-simple non-optional. It is marked optional in boot-dependencies, 
 				but required by jolokia-core. Without this fix it would be missing when used 
