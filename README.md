@@ -11,6 +11,7 @@ También pueden definir contadores personalizados como "services.system.myservic
 ![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/TIEMPO_RESPUESTA.png)
 5. El estado del servicio a lo largo del tiempo
 ![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/ESTADO_SERVICIOS.png)
-
+6.- La aplicación registrda en la consola de WAS, wstest_war.
+![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/CONSOLA_WAS.png)
 
 
