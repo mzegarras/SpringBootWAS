@@ -1,11 +1,12 @@
 # SpringBootWAS
 
 
-1. Spring boot admin permite monitorear el estado del servidor
-
+1. Spring Boot 
+⋅⋅⋅ Permite monitorear el estado del servidor
 ![ScreenShot](https://raw.github.com/mzegarras/SpringBootWAS/master/ESTADO_SERVER.png)
 
-2. 
+2. Spring Boot 
+⋅⋅⋅ Permite monitorear el estado del servidor
 
 
 
